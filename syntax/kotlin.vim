@@ -89,7 +89,7 @@ syn match ktCharacter "\v'[^\\]'"
 
 syn match ktAnnotation "\v(\w)@<!\@[[:alnum:]_.]*(:[[:alnum:]_.]*)?"
 syn match ktLabel "\v\w+\@"
-syn match ktLabel "\v\(\w+\s*\=" skip='\\('
+syn region ktLabel matchgroup "\v\(\w+\s*\=" skip='\\('
 syn match ktLabel "\v(\w)@<=\@\w+"
 
 syn match ktSimpleInterpolation "\v\$\h\w*" contained
